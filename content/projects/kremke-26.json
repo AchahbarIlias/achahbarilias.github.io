@@ -1,0 +1,8 @@
+{
+    "name": "Kremke 26",
+    "description": "Developed a website for a local ice cream shop in Tienen, Belgium. Assisted with deployment and SEO optimization to maximize online reach and discoverability for the business.",
+    "description_short": "Website for a local ice cream shop in Tienen. Built with Nuxt.js and Tailwind CSS, with SEO optimization for maximum online reach.",
+    "skills": ["Nuxt.js", "Tailwind CSS", "SEO", "Deployment"],
+    "status": "done",
+    "type": "hobby"
+}

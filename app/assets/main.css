@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #f97316;
+  --color-bg: #111111;
+  --color-bg-panel: #1a1a1a;
+  --color-bg-darker: #0a0a0a;
+  --color-text: #cccccc;
+  --color-shine: rgba(255, 255, 255, 0.04);
+}
+
+:root {
+  --accent: #f4f4f4; /* #946a50 */
+  --accent-glow: rgba(249, 115, 22, 0.2);
+  --bg-default: #111111;
+  --bg-panel: #1a1a1a;
+  --bg-header: #222222;
+  --bg-darker: #0a0a0a;
+  --border: #2d2d2d;
+  --border-bright: #3d3d3d;
+  --text-color: #cccccc;
+  --text-dim: #666666;
+  --shine: rgba(255, 255, 255, 0.04);
+  --green: #4ade80;
+  --blue: #60a5fa;
+  --yellow: #fbbf24;
+}
+
+@layer base {
+  body {
+    @apply min-h-screen font-mono font-light bg-bg text-text;
+    font-family: "Google Sans Code", monospace;
+    font-variation-settings: "MONO" 1;
+    background-color: var(--bg-default);
+    color: var(--text-color);
+  }
+}
+
+@layer utilities {
+  .page-wrapper {
+    @apply py-4;
+    padding-top: 56px;
+  }
+
+  .section {
+    padding: 1.5rem 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .section {
+      padding: 2rem 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section {
+      padding: 2rem 4rem;
+    }
+  }
+
+  /* ── Engine panel ── */
+  .engine-panel {
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--bg-panel);
+  }
+
+  .engine-panel-header {
+    display: flex;
+    align-items: center;
+    min-height: 28px;
+    padding: 4px 14px;
+    gap: 10px;
+    background: var(--bg-header);
+    border-bottom: 1px solid var(--border);
+    font-size: 10px;
+    color: var(--text-dim);
+    user-select: none;
+    flex-wrap: nowrap;
+  }
+
+  .panel-title {
+    color: var(--text-color);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .panel-icon {
+    color: var(--accent);
+    font-size: 11px;
+  }
+
+  .panel-controls {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .panel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .engine-path {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 10px;
+    color: var(--text-dim);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+  }
+
+  .engine-path .sep {
+    opacity: 0.35;
+  }
+
+  @media (max-width: 540px) {
+    .engine-path { display: none; }
+  }
+
+  .panel-controls {
+    flex-shrink: 0;
+  }
+
+  /* Filter dropdown — rendered via Teleport outside any overflow context */
+  .filter-dropdown {
+    background: var(--bg-header);
+    border: 1px solid var(--border-bright);
+    border-radius: 3px;
+    overflow: hidden;
+    min-width: 140px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    font-family: "Google Sans Code", monospace;
+    font-variation-settings: "MONO" 1;
+  }
+
+  .filter-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 7px 11px;
+    font-size: 10px;
+    color: var(--text-dim);
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    font-family: inherit;
+    text-align: left;
+    transition: background 0.12s, color 0.12s;
+  }
+
+  .filter-option:last-child { border-bottom: none; }
+
+  .filter-option:hover {
+    background: rgba(255,255,255,0.04);
+    color: var(--text-color);
+  }
+
+  .filter-option.selected {
+    color: var(--accent);
+    background: rgba(249,115,22,0.07);
+  }
+}

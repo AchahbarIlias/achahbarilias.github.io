@@ -1,0 +1,8 @@
+{
+    "name": "Obby Rotty",
+    "description": "Created and released my first Roblox game together with a friend where players run up a parkour to the top of a tower. Implemented module-based scripting with a clear client and server architecture separating game logic cleanly across both sides. The game achieved a total of 2825 players.",
+    "description_short": "A Roblox parkour game where players race up a tower. Built with Luau using a module-based client/server architecture. 2825 total players.",
+    "skills": ["Luau", "Roblox Studio", "Game Design", "Client/Server Architecture"],
+    "status": "done",
+    "type": "hobby"
+}

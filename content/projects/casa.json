@@ -1,0 +1,27 @@
+{
+    "name": "casa",
+    "description": "Development and support of a MACH powered enterprise commerce platform, combining the latest MACH platforms such including commercetools, Contentstack, Tweakwise, Voucherify, Microsoft Azure, Salesforce Marketing Cloud. This project involved the development and support of an enterprise commerce platform powered by MACH architecture (Microservices, API-first, Cloud-native, and Headless). The platform integrated leading MACH technologies, including commercetools, Contentstack, Tweakwise, Voucherify, Microsoft Azure, and Salesforce Marketing Cloud.",
+    "description_short": "Casa was an international chain of stores selling decorative and household items, as well as home textiles and garden and interior furniture.",
+    "skills": [
+        "React",
+        "Teamwork",
+        "Presentation Skills",
+        "Java",
+        "Azure Functions",
+        "Algolia",
+        "Ingenico",
+        "Tweakwise",
+        "Dynamic Yield",
+        "Voucherify",
+        "Azure Service Bus",
+        "Azure Storage",
+        "Azure Application Insights",
+        "Next.js",
+        "Typescript",
+        "Javascript",
+        "Node.js",
+        "Sass"
+    ],
+    "status": "done",
+    "type": "professional"
+}

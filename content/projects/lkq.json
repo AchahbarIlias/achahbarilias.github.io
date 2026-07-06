@@ -1,0 +1,17 @@
+{
+    "name": "lkq",
+    "description": "LKQ Corporation, founded in 1998, is an American company that provides alternative and specialty parts to repair and accessorise automobiles and other vehicles. They operate in North America, Europe, and Taiwan. LKQ requested supersonic to provide their B2C platforms (EuroCarParts and CartParts4Less) with L3 support, the highest level of technical support within an organisation. It involves handling complex issues that cannot be resolved by Level 1 (basic) or Level 2 (intermediate) support teams. Our L3 support specialists are experts in their field and have deep technical knowledge and experience. To gain complete insight into the project, the support service was preceded by a thorough deep-dive into the current solution together with the LKQ team. The L3 support happens in close collaboration with our sister-company nFuse, which provides the L2 support for LKQ. Due to our organisational setup, we are able to have an efficient and short communication line, leading to fast and smooth troubleshooting. Thereby LKQ also requested the supersonic team to pick up development tickets of their general B2C board in order to unburden their BAU development team. These tickets concern a variety of epics and touch upon different platforms (Contentful, datadog...).",
+    "description_short": "LKQ Corporation is an American provider of alternative and speciality parts to repair and accessorize automobiles and other vehicles.",
+    "skills": [
+        "Datadog",
+        "Algolia",
+        "Contentful CMS",
+        "commercetools",
+        "Automated Testing",
+        "Next.js",
+        "AWS",
+        "Onestock"
+    ],
+    "status": "done",
+    "type": "professional"
+}
