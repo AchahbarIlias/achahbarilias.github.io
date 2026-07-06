@@ -34,18 +34,20 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          static_site_generator: nuxt
-
-      - name: Prune
-        run: pnpm store prune
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Clean stale build output
+        run: rm -rf .output .nuxt node_modules/.cache
+
       - name: Generate static site
         run: pnpm generate
-        # or `pnpm run generate` if you prefer
+
+      - name: Verify Tailwind CSS was emitted
+        run: |
+          grep -q 'rel="stylesheet"' .output/public/index.html \
+            || (echo "::error::No stylesheet linked — Tailwind did not build" && exit 1)
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
