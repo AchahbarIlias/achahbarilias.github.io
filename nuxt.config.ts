@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     '~/assets/main.css'
   ],
 
-  modules: ['@nuxt/content', '@nuxt/image'],
+  modules: ['@nuxt/content'],
 
   vite: {
     optimizeDeps: {
@@ -28,10 +28,5 @@ export default defineNuxtConfig({
         imports: ['content'],
       },
     ],
-  },
-
-  image: {
-    domains: ['www.google.com'],
-    provider: 'ipx',
   },
 })

@@ -1,12 +1,10 @@
 <template>
   <span class="icon" :class="[`icon-${size}`, `icon-${variant}`]">
-    <NuxtImg
+    <img
       v-if="name"
       :src="`/images/${name}`"
       :alt="name"
       class="icon-img"
-      sizes="sm:600px md:800px lg:1600px xl:6000px"
-      densities="x1 x2"
     />
   </span>
 </template>
