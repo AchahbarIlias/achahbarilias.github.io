@@ -43,6 +43,8 @@ jobs:
       - name: Generate static site
         run: pnpm generate
         # or `pnpm run generate` if you prefer
+        env:
+          NUXT_APP_BASE_URL: /${{ github.event.repository.name }}/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
