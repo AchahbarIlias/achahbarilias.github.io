@@ -12,6 +12,8 @@
 </template>
 
 <script setup>
+import { NuxtImg } from "@nuxt/image";
+
 defineProps({
   size: {
     type: String,
