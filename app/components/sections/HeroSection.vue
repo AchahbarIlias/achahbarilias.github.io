@@ -84,7 +84,7 @@
               <div class="char-frame">
                 <!-- floating character -->
                 <div class="abs-fill flex items-center justify-center animate-[float_3s_ease-in-out_infinite]">
-                  <Utils-Icon name="roblox-char.webp" size="xxxl" />
+                  <Utils-Icon name="psx_ilias_img.png" size="xxxl" />
                 </div>
                 <!-- corner brackets -->
                 <span class="corner tl"></span>
